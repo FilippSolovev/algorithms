@@ -1,0 +1,5 @@
+Successfully run the string_length.py with 12345678
+Successfully run the string_length.py with 1234567890123456789012345678901234567890123456789012345678901234
+Successfully run the string_length.py with 
+Successfully run the string_length.py with $
+Failed run of the string_length.py with abcdefghijklmnoprstuvwxyz. The output should be 26.
