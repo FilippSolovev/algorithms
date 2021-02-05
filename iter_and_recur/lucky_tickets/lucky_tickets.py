@@ -9,7 +9,7 @@ def get_sum_of_digits(number):
 
 
 def get_num_of_lucky_tickets(num):
-    """Get the number of 'lucky' tickets with Map Reduce flavor.
+    """Get the number of 'lucky' tickets with MapReduce flavor.
 
     Get the count of 2N numbers which have sum of digits in the left part
     equal to ones in the right, i.e. '100001', '157904', '97142289' etc.
