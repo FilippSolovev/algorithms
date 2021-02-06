@@ -83,6 +83,6 @@ if __name__ == '__main__':
         sys.exit()
 
     if func_number in figure.keys():
-        draw(figure[1])
+        draw(figure[func_number])
     else:
         print('Sorry figure {} is unavailable'.format(func_number))
