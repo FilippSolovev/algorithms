@@ -1,0 +1,7 @@
+Successfully run the lucky_tickets.py with 1
+Successfully run the lucky_tickets.py with 2
+Successfully run the lucky_tickets.py with 3
+Successfully run the lucky_tickets.py with 4
+Successfully run the lucky_tickets.py with 5
+Successfully run the lucky_tickets.py with 6
+Successfully run the lucky_tickets.py with 7
