@@ -9,7 +9,7 @@ This project is a solution for the Harry Potter square task, which you can watch
 
 # How to use
 
-The command below prints to the console figure #3 from the [catalog](https://github.com/FilippSolovev/algorithms/tree/master/iter_and_recur/square_art/img)
+The command below prints to the console figure #24 from the [catalog](https://github.com/FilippSolovev/algorithms/tree/master/iter_and_recur/square_art/img)
 ~~~
 $ python square_art.py 24
 
