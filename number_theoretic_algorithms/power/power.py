@@ -16,6 +16,8 @@ def power_iter(num, exp):
             the expth power of num.
 
     """
+    if exp == 0:
+        return 1
 
     result = 1
     for _ in range(exp):
@@ -23,10 +25,11 @@ def power_iter(num, exp):
     return result
 
 
-def power_2n():
+def power_2n(num, exp):
     """Binary exponentiation.
 
-    The function to compute exponentiation by powers of two with multiplication.
+    The function to compute exponentiation by powers of two with
+    multiplication.
 
     Parameters
     ----------
@@ -41,9 +44,22 @@ def power_2n():
             the expth power of num.
 
     """
+    if exp == 0:
+        return 1
+
+    result = num
+    power_of_2 = 1
+    while power_of_2 * 2 < exp:
+        power_of_2 *= 2
+        result *= result
+
+    for _ in range(power_of_2, exp):
+        result *= num
+
+    return result
 
 
-def power_binary_exp():
+def power_binary_exp(num, exp):
     """Binary exponentiation.
 
     The function to compute exponentiation by converion the power to base-2.
@@ -61,14 +77,28 @@ def power_binary_exp():
             the expth power of num.
 
     """
+    if exp == 0:
+        return 1
 
-    pass
+    result = 1
+    inter_result = num
+    power_of_2 = 1
+    deg_exp = exp
+    while power_of_2 * 2 < exp:
+        power_of_2 *= 2
+        deg_exp = deg_exp // 2
+        inter_result *= inter_result
+        result *= inter_result if deg_exp % 2 else 1
+
+    return result
 
 
 if __name__ == '__main__':
-    # a = power_iter(2, 4)
-    # print(a)
+    a = power_iter(3, 100)
+    print(a)
 
-    a = 100
-    b = str(bin(a))[2:]
+    b = power_2n(3, 100)
     print(b)
+
+    c = power_binary_exp(3, 100)
+    print(c)
