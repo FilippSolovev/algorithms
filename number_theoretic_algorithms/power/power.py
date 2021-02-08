@@ -1,7 +1,7 @@
 def power_iter(num, exp):
     """Iterative exponentiation.
 
-    The function to compute exponentiation iteratively
+    The function to compute exponentiation iteratively.
 
     Parameters
     ----------
@@ -25,10 +25,10 @@ def power_iter(num, exp):
     return result
 
 
-def power_2n(num, exp):
-    """Binary exponentiation.
+def power_by_squaring(num, exp):
+    """Exponentiation by square and multiply.
 
-    The function to compute exponentiation by powers of two with
+    The function to compute exponentiation by squaring with residiual
     multiplication.
 
     Parameters
@@ -59,10 +59,10 @@ def power_2n(num, exp):
     return result
 
 
-def power_binary_exp(num, exp):
-    """Binary exponentiation.
+def power_binary_expansion(num, exp):
+    """Exponentiation by binary expansion of the exponent.
 
-    The function to compute exponentiation by converion the power to base-2.
+    The function to compute exponentiation by converting the exponent to base2.
 
     Parameters
     ----------
@@ -94,11 +94,11 @@ def power_binary_exp(num, exp):
 
 
 if __name__ == '__main__':
-    a = power_iter(3, 100)
+    a = power_iter(1.000001, 100)
     print(a)
 
-    b = power_2n(3, 100)
+    b = power_by_squaring(1.000001, 100)
     print(b)
 
-    c = power_binary_exp(3, 100)
+    c = power_binary_expansion(1.000001, 100)
     print(c)
