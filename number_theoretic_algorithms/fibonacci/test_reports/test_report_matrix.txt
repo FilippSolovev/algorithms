@@ -1,0 +1,18 @@
+Successfully run the fib_matrix.py. With argument(s) ['0'] got the output of 0.
+Elapsed time: 0.08s
+Successfully run the fib_matrix.py. With argument(s) ['1'] got the output of 1.
+Elapsed time: 0.06s
+Successfully run the fib_matrix.py. With argument(s) ['2'] got the output of 1.
+Elapsed time: 0.06s
+Successfully run the fib_matrix.py. With argument(s) ['3'] got the output of 2.
+Elapsed time: 0.07s
+Successfully run the fib_matrix.py. With argument(s) ['4'] got the output of 3.
+Elapsed time: 0.06s
+Successfully run the fib_matrix.py. With argument(s) ['5'] got the output of 5.
+Elapsed time: 0.06s
+Successfully run the fib_matrix.py. With argument(s) ['10'] got the output of 55.
+Elapsed time: 0.07s
+Successfully run the fib_matrix.py. With argument(s) ['100'] got the output of 354224848179261915075.
+Elapsed time: 0.07s
+Successfully run the fib_matrix.py. With argument(s) ['1000'] got the output of 43466557686937456435688527675040625802564660517371780402481729089536555417949051890403879840079255169295922593080322634775209689623239873322471161642996440906533187938298969649928516003704476137795166849228875.
+Elapsed time: 0.07s

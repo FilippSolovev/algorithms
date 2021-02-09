@@ -1,0 +1,18 @@
+Successfully run the fib_golden_ratio.py. With argument(s) ['0'] got the output of 0.
+Elapsed time: 0.08s
+Successfully run the fib_golden_ratio.py. With argument(s) ['1'] got the output of 1.
+Elapsed time: 0.07s
+Successfully run the fib_golden_ratio.py. With argument(s) ['2'] got the output of 1.
+Elapsed time: 0.06s
+Successfully run the fib_golden_ratio.py. With argument(s) ['3'] got the output of 2.
+Elapsed time: 0.06s
+Successfully run the fib_golden_ratio.py. With argument(s) ['4'] got the output of 3.
+Elapsed time: 0.06s
+Successfully run the fib_golden_ratio.py. With argument(s) ['5'] got the output of 5.
+Elapsed time: 0.06s
+Successfully run the fib_golden_ratio.py. With argument(s) ['10'] got the output of 55.
+Elapsed time: 0.07s
+Failed run of the fib_golden_ratio.py with ['100']. The output should be 354224848179261915075, but got 354224848179263111168.
+Elapsed time: 0.07s
+Failed run of the fib_golden_ratio.py with ['1000']. The output should be 43466557686937456435688527675040625802564660517371780402481729089536555417949051890403879840079255169295922593080322634775209689623239873322471161642996440906533187938298969649928516003704476137795166849228875, but got 43466557686938914862637500386755014010958388901725051132915256476112292920052539720295234060457458057800732025086130975998716977051839168242483814062805283311821051327273518050882075662659534523370463746326528.
+Elapsed time: 0.07s
