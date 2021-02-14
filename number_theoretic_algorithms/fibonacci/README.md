@@ -22,8 +22,8 @@ You can also run tests for all three algorithms in the cloud by clicking on [![O
 
 The execution times for all scripts are presented in the table below.
 
-| Input arguments | 0 | 1 | 2 | 3 | 4 | 5 | 10 | 100 | 1000 | 10000 | 100000 | 1000000 | 10000000 |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Iterative| 0.05s | 0.05s | 0.05s | 0.04s | 0.05s | 0.04s | 0.07s | 0.07s | 0.05s | 0.05s | 0.24s | 14.57s | x |
-| Golden ratio| 0.05s | 0.05s | 0.05s | 0.05s | 0.07s | 0.05s | 0.06s | 0.06s | 0.05s | 0.05s (x) | 0.14s (x) | 0.22s (x) | x |
-| Product of matrices| 0.06s | 0.05s | 0.05s | 0.05s | 0.05s | 0.04s | 0.07s | 0.06s | 0.05s | 0.06s | 0.84s | 92.64s | x |
+| Input arguments | 0 | 1 | 2 | 3 | 4 | 5 | 10 | 100 | 1000 | 10000 | 100000 | 1000000 |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Iterative| 0.05s | 0.05s | 0.05s | 0.04s | 0.05s | 0.04s | 0.07s | 0.07s | 0.05s | 0.05s | 0.24s | 14.57s |
+| Golden ratio| 0.05s | 0.05s | 0.05s | 0.05s | 0.07s | 0.05s | 0.06s | 0.06s | 0.05s | 0.05s (x) | 0.14s (x) | 0.22s (x) |
+| Product of matrices| 0.06s | 0.05s | 0.05s | 0.05s | 0.05s | 0.04s | 0.07s | 0.06s | 0.05s | 0.06s | 0.84s | 92.64s |
