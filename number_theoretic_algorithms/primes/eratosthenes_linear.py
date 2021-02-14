@@ -24,7 +24,7 @@ def eratosthenes_linear(num):
             primes.append(i)
             count += 1
         for pr in primes:
-            if pr <= sieve[i] and pr * i <= num:
+            if (pr <= sieve[i]) and (pr * i <= num):
                 sieve[pr * i] = pr
             else:
                 break
