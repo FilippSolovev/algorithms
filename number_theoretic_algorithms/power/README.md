@@ -15,7 +15,7 @@ To run tests with the [naive-tester](https://github.com/FilippSolovev/naive-test
 $ tester power_by_squaring.py tests
 ~~~
 
-You can also run tests for all three algorithms in the cloud by clicking on the Google Colab badge  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FilippSolovev/algorithms/blob/master/number_theoretic_algorithms/power/power_test_report.ipynb)
+You can also run tests for all three algorithms in the cloud by clicking on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FilippSolovev/algorithms/blob/master/number_theoretic_algorithms/power/power_test_report.ipynb)
 
 # Algorithms comparison
 
