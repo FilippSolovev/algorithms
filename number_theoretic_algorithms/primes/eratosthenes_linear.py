@@ -42,7 +42,7 @@ def main():
 
 
 if __name__ == '__main__':
-    # main()
+    main()
 
     # unit tests
     # assert eratosthenes_linear(1) == 0

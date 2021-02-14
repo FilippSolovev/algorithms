@@ -1,0 +1,8 @@
+Successfully run the eratosthenes.py. With argument(s) ['10'] got the output of 4.
+Elapsed time: 0.06s
+Successfully run the eratosthenes.py. With argument(s) ['1'] got the output of 0.
+Elapsed time: 0.07s
+Successfully run the eratosthenes.py. With argument(s) ['1000000'] got the output of 78498.
+Elapsed time: 0.35s
+Successfully run the eratosthenes.py. With argument(s) ['10000000'] got the output of 664579.
+Elapsed time: 3.37s
