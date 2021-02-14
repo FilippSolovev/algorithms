@@ -1,6 +1,6 @@
 # Prime numbers
 
-Computation methods to find all prime numbers up to any given limit. To be precise insted of finding prime numbers themselves the aggregate of them - count - is being sought. Two kinds of algorithms are examined - the trial division (iterative) with its modifications and the [sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
+Computation methods to find all prime numbers up to any given limit. To be precise, instead of finding prime numbers themselves, the aggregate of them - count - is being sought. Two kinds of algorithms are examined - the trial division (iterative) with its modifications and [Eratosthenes' sieve](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
 
 # Example
 
