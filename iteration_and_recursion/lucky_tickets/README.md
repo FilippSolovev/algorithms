@@ -25,8 +25,8 @@ The algorithm is iterative by its essence but with a few tricks. To certain exte
 
 A couple of notes about its effectiveness (or ineffectiveness 🙈) can be better shown in the pictures.
 
-![line profiler results](https://github.com/FilippSolovev/algorithms/blob/master/iter_and_recur/lucky_tickets/img/line_profiler.png)
+![line profiler results](https://github.com/FilippSolovev/algorithms/blob/master/iteration_and_recursion/lucky_tickets/img/line_profiler.png)
 
-![memory profiler results](https://github.com/FilippSolovev/algorithms/blob/master/iter_and_recur/lucky_tickets/img/memory_profiler.png)
+![memory profiler results](https://github.com/FilippSolovev/algorithms/blob/master/iteration_and_recursion/lucky_tickets/img/memory_profiler.png)
 
 As you can see the most costly thing is sorting key-value pairs and final summation.
