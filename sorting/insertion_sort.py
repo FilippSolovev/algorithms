@@ -42,5 +42,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # array = [2, 0, -78, 19209, 23.0012, -12, 0.0002, -0]
-    # print(insertion_sort(array))
