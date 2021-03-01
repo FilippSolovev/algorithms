@@ -1,10 +1,5 @@
 import sys
-
-
-def cast_to_numeric(string):
-    if string.find('.') == -1:
-        return int(string)
-    return float(string)
+from helper import read_data
 
 
 def selection_sort(array):
@@ -21,14 +16,21 @@ def selection_sort(array):
 
 def main():
 
-    args = sys.argv[1:]
+    # args = sys.argv[1:]
+    #
+    # if not len(args):
+    #     sys.exit()
+    #
+    # array = [*map(cast_to_numeric, args)]
 
-    if not len(args):
+    file_name = sys.argv[1]
+    if not len(file_name):
         sys.exit()
 
-    array = [*map(cast_to_numeric, args)]
+    array = read_data(file_name)
+
     output = selection_sort(array)
-    print(output)
+    print(' '.join(str(elem) for elem in output))
 
 
 if __name__ == '__main__':

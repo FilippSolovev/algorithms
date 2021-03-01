@@ -1,4 +1,5 @@
 import sys
+from helper import read_data
 
 
 def cast_to_numeric(string):
@@ -22,8 +23,8 @@ def heapify(array, root, size):
 
 
 def heap_sort(array):
-    for i in range(len(array) // 2 - 1, 0, -1):
-        heapify(array, 0, len(array))
+    for i in range(len(array) // 2 - 1, -1, -1):
+        heapify(array, i, len(array))
     for j in range(len(array) - 1, 0, -1):
         array[0], array[j] = array[j], array[0]
         heapify(array, 0, j)
@@ -31,17 +32,24 @@ def heap_sort(array):
 
 
 def main():
-    # test_array = [112, 6.22, 5, 0.12, -3, -2.0008, 1, 1.011]
-    # print(heap_sort(test_array))
 
-    args = sys.argv[1:]
+    # args = sys.argv[1:]
+    #
+    # if not len(args):
+    #     sys.exit()
+    #
+    # array = [*map(cast_to_numeric, args)]
+    # output = heap_sort(array)
+    # print(output)
 
-    if not len(args):
+    file_name = sys.argv[1]
+    if not len(file_name):
         sys.exit()
 
-    array = [*map(cast_to_numeric, args)]
+    array = read_data(file_name)
+
     output = heap_sort(array)
-    print(output)
+    print(' '.join(str(elem) for elem in output))
 
 
 if __name__ == '__main__':
