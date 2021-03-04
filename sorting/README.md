@@ -18,4 +18,6 @@ $ tester heap_sort.py tests/random
 
 You can also run tests for all four sorting algorithms in the cloud by clicking on []()
 
-# Sorting algorithms comparison 
+# Sorting algorithms comparison
+
+The execution times for all scripts are presented in the table below.
