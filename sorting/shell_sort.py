@@ -1,27 +1,22 @@
 import sys
-
-
-def insertion_sort(array):
-    # more pythonic
-    array_length = len(array)
-    for i in range(1, array_length):
-        for j in range(i, 0, -1):
-            if array[j - 1] > array[j]:
-                array[j - 1], array[j] = array[j], array[j - 1]
-    return array
+from helper import read_data
 
 
 def shell_sort(array):
     array_length = len(array)
-    # 1:
+
+    # 1: Shell, 1959
+    gaps = [array_length // 2**k for k in range(array_length)]
+    gaps = [gap for gap in gaps if gap > 0]
+
+    # 2: Ciura, 2001
     # gaps_init = [701, 301, 132, 57, 23, 10, 4, 1]
     # gaps = [gap for gap in gaps_init if gap <= array_length]
 
-    # 2:
-    # gaps = [array_length // 2**k for k in range(array_length)]
+    # 3: Papernov and Stasevich, 1965
+    # gaps = [(2**k + 1) for k in range(array_length)][::-1]
+    # gaps = gaps + [1]
 
-    # 3:
-    gaps = [(2**k + 1) for k in range(array_length)][::-1]
     for gap in gaps:
         # for i in range(gap, array_length):
         #     elem = array[i]
@@ -30,6 +25,7 @@ def shell_sort(array):
         #         array[j] = array[j - gap]
         #         j -= gap
         #     array[j] = elem
+        # same as above, but more pythonic:
         for i in range(gap, array_length):
             for j in range(i, 0, -1 * gap):
                 if array[j - gap] > array[j]:
@@ -39,19 +35,24 @@ def shell_sort(array):
 
 def main():
 
-    args = sys.argv[1:]
+    # args = sys.argv[1:]
+    #
+    # if not len(args):
+    #     sys.exit()
+    #
+    # array = [*map(cast_to_numeric, args)]
+    # output = shell_sort(array)
+    # print(output)
 
-    if not len(args):
+    file_name = sys.argv[1]
+    if not len(file_name):
         sys.exit()
 
-    array = [*map(cast_to_numeric, args)]
+    array = read_data(file_name)
+
     output = shell_sort(array)
-    print(output)
+    print(' '.join(str(elem) for elem in output))
 
 
 if __name__ == '__main__':
-    # main()
-    test_array = [2, 0, -15, -29, -1, 0, 99, 3.002, -0.000012]
-    # test_array = [2, 0, -15, -29, -1, 0]
-    print(test_array)
-    print(shell_sort(test_array))
+    main()
