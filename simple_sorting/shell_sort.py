@@ -6,16 +6,16 @@ def shell_sort(array):
     array_length = len(array)
 
     # 1: Shell, 1959
-    gaps = [array_length // 2**k for k in range(array_length)][::-1]
-    gaps = [gap for gap in gaps if gap > 0]
+    # gaps = [array_length // 2**k for k in range(array_length)]
+    # gaps = [gap for gap in gaps if gap > 0]
 
     # 2: Ciura, 2001
     # gaps_init = [701, 301, 132, 57, 23, 10, 4, 1]
     # gaps = [gap for gap in gaps_init if gap <= array_length]
 
     # 3: Papernov and Stasevich, 1965
-    # gaps = [(2**k + 1) for k in range(array_length)][::-1]
-    # gaps = gaps + [1]
+    gaps = [(2**k + 1) for k in range(array_length)][::-1]
+    gaps = gaps + [1]
 
     for gap in gaps:
         # for i in range(gap, array_length):
