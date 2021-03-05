@@ -16,7 +16,7 @@ To run tests with the [naive-tester](https://github.com/FilippSolovev/naive-test
 $ tester heap_sort.py tests/random
 ~~~
 
-You can also run tests for all four sorting algorithms in the cloud by clicking on []()
+You can also run tests for all four sorting algorithms in the cloud by clicking on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FilippSolovev/algorithms/blob/master/simple_sorting/simple_sorting_test_report.ipynb)
 
 # Sorting algorithms comparison
 
