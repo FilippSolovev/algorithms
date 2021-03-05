@@ -41,4 +41,4 @@ The execution times for all scripts are presented in the table below.
 | Shell sort, 1959 | Reversely sorted | 0.04s | 0.04s | 0.04s | 0.11s | 9.73s | 837.60s |
 | Heap sort | Reversely sorted | 0.04s | 0.04s | 0.04s | 0.04s | 0.10s | 0.81s |
 
-Clear winner here is the Heap sort algorithm and it's not a surprise, since its complexity is O(n log n) while others have O(n<sup>2</sup>).
+Clear winner here is the Heap sort algorithm and it's not a surprise, since its complexity is O(n log n) while others have O(n<sup>2</sup>). Surprisingly the Shell sort algorithm has not demonstrated any gain in the performance.
