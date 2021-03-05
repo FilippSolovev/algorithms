@@ -6,7 +6,7 @@ def shell_sort(array):
     array_length = len(array)
 
     # 1: Shell, 1959
-    gaps = [array_length // 2**k for k in range(array_length)]
+    gaps = [array_length // 2**k for k in range(array_length)][::-1]
     gaps = [gap for gap in gaps if gap > 0]
 
     # 2: Ciura, 2001
