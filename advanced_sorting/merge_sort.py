@@ -11,16 +11,10 @@ def bottom_up_merge(left, right):
 
         if left[0] < right[0]:
             left_head = left.pop(0)
-            # print('left head:{}'.format(left_head))
-            # print('l:{}'.format(left))
             merged.append(left_head)
-            # print('resulting:{}'.format(merged))
         else:
             right_head = right.pop(0)
-            # print('right head:{}'.format(right_head))
-            # print('r:{}'.format(right))
             merged.append(right_head)
-            # print('resulting:{}'.format(merged))
 
     while True:
         if not left:
@@ -51,6 +45,30 @@ def bottom_up_merge_sort(array):
         array = deepcopy(tmp_array)
         width *= 2
     return array
+
+
+# def bottom_up_merge_sort(array):
+#     """Bottom up merge sort with the usage of 4 arrays as buffers."""
+#     array_length = len(array)
+#     tape_a = array[: array_length // 2]
+#     tape_b = array[array_length // 2:]
+#     tape_idx = 0
+#     width = 1
+#     while width < array_length:
+#         tape_c = []
+#         tape_d = []
+#         tmp_array = [tape_c, tape_d]
+#         i = 0
+#         for i in range(0, array_length, width):
+#             left = tape_a[i:min(i + width, array_length)]
+#             right = tape_b[i:min(i + width, array_length)]
+#             tmp_array[tape_idx] += bottom_up_merge(left, right)
+#             tape_idx = 1 - tape_idx
+#         tape_a = deepcopy(tape_c)
+#         tape_b = deepcopy(tape_d)
+#         width *= 2
+#     output = [tape_a, tape_b]
+#     return output[tape_idx]
 
 
 if __name__ == '__main__':
